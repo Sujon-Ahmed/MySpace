@@ -1,0 +1,311 @@
+:root{
+    --gray_clr: #333;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato,Poppins, Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    background-image: url(../images/parallax1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40rem;
+    opacity: 0.7;
+    background-position: 0;
+    position: relative;
+}
+.navbar{
+    background: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+/* style for navbar brand */
+a.navbar-brand{
+    font-weight: 500;
+    color: var(--gray_clr);
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+a.nav-link{
+    font-size: 1.6rem;
+    color: var(--gray_clr);
+    margin-left: 2rem;
+    font-weight: 300;
+}
+
+i.fa-search{
+    color: var(--gray_clr);
+    font-size: 1.5rem;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
+    width: 50rem;
+    height: 5rem;
+    background: var(--gray_clr);
+    color: white;
+    letter-spacing: .9rem;
+}
+@media(max-width:768px) {
+    .title{
+        width: 70%;
+        font-size: 1.6rem;
+    }
+    i.fa-search{
+        display: none;
+    }
+}
+
+p.text-italic{
+    font-size: 1.6rem;
+    font-style: italic;
+    color: var(--gray_clr);
+}
+p.desc{
+    font-size: 1.5rem;
+}
+a.myname{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--gray_clr);
+}
+
+img.myImage{
+    width: auto;
+    height: 50rem;
+    opacity: 0.6;
+}
+img.myImage:hover{
+    opacity: 1;
+}
+p.side_text{
+    font-size: 1.6rem;
+}
+.good_at{
+    font-size: 1.6rem;
+}
+.grayScale{
+    width: 100%;
+    background: #ddd;
+    height: 3rem;
+}
+.complete_bar_ps{
+    background: #333;
+    width: 90%;
+    height: 3rem;
+    text-align: center;
+    color: white;
+    line-height: 3rem;
+}
+.complete_bar_web{
+    background: #333;
+    width: 85%;
+    height: 3rem;
+    text-align: center;
+    color: white;
+    line-height: 3rem;
+}
+.complete_bar_img{
+    background: #333;
+    width: 75%;
+    height: 3rem;
+    text-align: center;
+    color: white;
+    line-height: 3rem;
+}
+.fa-laptop{
+    margin-right: .5rem;
+}
+.web,.image,.ps{
+    letter-spacing: .5rem;
+}
+@media(max-width:768px) {
+    .d-flex{
+        flex-direction: column;
+    }
+    d-flex .col-md-3 h1{
+        padding-top: 2rem;
+    }
+}
+.portfolio{
+    background-image: url(../images/parallax2.jpeg);
+    background-size: cover;
+    background-position: 0;
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+.mw-title{
+    font-style: italic;
+}
+.img-gallery img{
+    width: 20rem;
+    height: auto;
+    margin: auto 1rem;
+    margin-bottom: 2rem;
+}
+.img-gallery img:hover{
+    opacity: 0.6;
+}
+@media (max-width:768px) {
+    .img-gallery img{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+}
+.loadMoreBtn{
+    width: 13rem;
+    height: 5rem;
+    background: #ddd;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.loadMoreBtn:hover{
+    background: #999;
+}
+.contact{
+    background-image: url(../images/parallax3.jpeg);
+    opacity: 0.8;
+    background-size: cover;
+    background-position: 0;
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+/* img.map{
+    width: 80%;
+    height: auto;
+    text-align: right;
+} */
+.map{
+	/* flex: 1; */
+    width: 100%;
+    height: 100%;
+	filter: grayscale(100%);
+}
+span i.fa{
+    font-size: 2rem;
+    color: #555;
+    margin: 1rem;
+}
+span.bio{
+    font-size: 1.7rem;
+    color: #555;
+    text-align: left;
+}
+span.coffee i.fa-coffee{
+    font-size: 1.5rem;
+}
+input[type=text]{
+    width: 27rem;
+    height: 4rem;
+    padding: 1rem;
+    float: right;
+    
+}
+input[type=email]{
+    margin-left: 1rem;
+    width: 27rem;
+    height: 4rem;
+    padding: 1rem 1.5rem;
+    float: right;
+}
+textarea{
+    margin: 5rem;
+    width: 55rem;
+    height: 8rem;
+    padding: 1rem 1.5rem;
+    float: right;
+}
+.sendMsg{
+    margin-top: 1rem;
+    width: 15rem;
+    height: 4rem;
+    background: #ddd;
+    border: none;
+    background: #111;
+    color: #fff;
+}
+@media(max-width: 1100px){
+    #name,#email,#message{
+        width: 90%;
+        padding: auto .5rem;
+        margin: 1rem;
+        float: right;
+    }
+    button.sendMsg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+    }
+}
+
+@media(max-width: 992px){
+    #name,#email,#message{
+        width: 90%;
+        padding: auto .5rem;
+        margin: 1rem;
+    }
+    button.sendMsg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+    }
+}
+@media(max-width: 768px){
+
+    #name,#email,#message{
+        width: 90%;
+        padding: auto .5rem;
+        margin: 1rem;
+    }
+    button.sendMsg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+    }
+}
+footer{
+    background: #555;
+    text-align: center;
+}
+.topBtn{
+    width: 12rem;
+    height: 5rem;
+}
