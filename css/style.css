@@ -10,20 +10,32 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
-header{
+
+.bg{
     background-image: url(../images/parallax1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    min-height: 100vh;
     height: 40rem;
     opacity: 0.7;
     background-position: 0;
     position: relative;
 }
-.navbar{
-    background: white;
+header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header nav.sticky{
+    background: #fff;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+.navbar{
+    background: transparent;
 }
 /* style for navbar brand */
 a.navbar-brand{
@@ -56,8 +68,8 @@ i.fa-search{
     position: absolute;
     bottom: 0;
     left: 50%;
-    top: 30%;
-    transform: translate(-50%, -30%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 50rem;
     height: 5rem;
     background: var(--gray_clr);
@@ -71,6 +83,20 @@ i.fa-search{
     }
     i.fa-search{
         display: none;
+    }
+    span.navbar-toggler-icon{
+        border: none;
+        outline: none;
+        text-align: center;
+        display: flex;
+        line-height: auto;
+        justify-content: center;
+        color: #fff;
+        align-items: center;
+        background:cornflowerblue;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -285,6 +311,20 @@ textarea{
         justify-content: center;
         align-items: center;
         margin-right: 1rem;
+    }
+    span.navbar-toggler-icon{
+        border: none;
+        outline: none;
+        text-align: center;
+        display: flex;
+        line-height: auto;
+        justify-content: center;
+        color: #fff;
+        align-items: center;
+        background:cornflowerblue;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
     }
 }
 @media(max-width: 768px){
